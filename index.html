@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Sustentável</title>
+    <!-- Fonte mais moderna do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO DO SITE (MENU) -->
+    <header class="cabecalho">
+        <div class="container cabecalho-container">
+            <div class="logo">🌱 Futuro Sustentável</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#capa">🏠 Início</a></li>
+                    <li><a href="#panorama">🌍 Panorama</a></li>
+                    <li><a href="#industria">🏭 Indústria</a></li>
+                    <li><a href="#greenwashing">⚠️ Greenwashing</a></li>
+                    <li><a href="#exemplos">✨ Exemplos</a></li>
+                    <li><a href="#equilibrio">⚖️ Equilíbrio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO CAPA -->
+        <section id="capa" class="secao capa">
+            <div class="container">
+                <div class="conteudo-capa">
+                    <h1 class="titulo-principal">FUTURO SUSTENTÁVEL:</h1>
+                    <p class="subtitulo-principal">O Equilíbrio entre Produção e Meio Ambiente.</p>
+                    <p class="autor">LAURA HECK THOMAZINE | Nº 27 | 2°C</p>
+                    <!-- Imagem ilustrativa na capa -->
+                    <div class="imagem-capa">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mão segurando planta" class="img-responsive">
+                    </div>
+                    <div class="icone-capa">👇</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PANORAMA GLOBAL -->
+        <section id="panorama" class="secao panorama">
+            <div class="container">
+                <h2 class="titulo-secao">🌎 O PANORAMA GLOBAL</h2>
+                <div class="grid-cards">
+                    <div class="card card-interativo" data-cor="fundo-capa">
+                        <span class="icone-card">⚡</span>
+                        <h3>Fontes Principais:</h3>
+                        <p>Carvão (15,9 bi t), Petróleo (12,6 bi t) e Gás Natural (8,1 bi t).</p>
+                    </div>
+                    <div class="card card-interativo" data-cor="fundo-panorama">
+                        <span class="icone-card">🔥</span>
+                        <h3>O "Ponto de Não Retorno":</h3>
+                        <p>Cientistas alertam que temos cerca de <strong>5 anos</strong> para reverter a curva de aquecimento antes de danos irreversíveis.</p>
+                    </div>
+                    <div class="card card-interativo" data-cor="fundo-industria">
+                        <span class="icone-card">💨</span>
+                        <h3>Recorde de Emissões:</h3>
+                        <p><strong>38,1 bilhões</strong> de toneladas de CO2 emitidas globalmente em 2025.</p>
+                    </div>
+                </div>
+                <!-- Contador interativo -->
+                <div class="contador-container">
+                    <h3>🌡️ A cada segundo, emitimos toneladas de CO₂</h3>
+                    <div class="contador" id="contador-co2">0</div>
+                    <p class="contador-info">toneladas de CO₂ emitidas desde que você abriu esta página</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO INDÚSTRIA BRASILEIRA -->
+        <section id="industria" class="secao industria">
+            <div class="container">
+                <h2 class="titulo-secao">🏭 INDÚSTRIA BRASILEIRA E SUSTENTABILIDADE</h2>
+                <div class="grid-duas-colunas">
+                    <div class="coluna-texto">
+                        <div class="caixa-destaque">
+                            <p><strong>Adoção de Práticas:</strong> 90% das grandes indústrias brasileiras já possuem alguma iniciativa ambiental (IBGE).</p>
+                        </div>
+                        <p><strong>Desafio:</strong> Apenas 20% das empresas dizem que essas ações foram motivadas por incentivos públicos; a maioria ainda age por pressão do mercado ou redução de custos.</p>
+                        <!-- Gráfico de barras interativo -->
+                        <div class="grafico-container">
+                            <h4>Percentual de empresas por iniciativa:</h4>
+                            <div class="barras-grafico">
+                                <div class="barra-item">
+                                    <span>Resíduos Sólidos</span>
+                                    <div class="barra" data-valor="79.6">
+                                        <div class="barra-preenchimento" style="width: 79.6%">79.6%</div>
+                                    </div>
+                                </div>
+                                <div class="barra-item">
+                                    <span>Reciclagem</span>
+                                    <div class="barra" data-valor="75.1">
+                                        <div class="barra-preenchimento" style="width: 75.1%">75.1%</div>
+                                    </div>
+                                </div>
+                                <div class="barra-item">
+                                    <span>Eficiência Energética</span>
+                                    <div class="barra" data-valor="61.5">
+                                        <div class="barra-preenchimento" style="width: 61.5%">61.5%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coluna-lista">
+                        <h4>Principais Focos:</h4>
+                        <ul class="lista-focos">
+                            <li><span class="bullet">🗑️</span> Gestão de Resíduos Sólidos (79,6%)</li>
+                            <li><span class="bullet">♻️</span> Reciclagem e Reúso (75,1%)</li>
+                            <li><span class="bullet">💡</span> Eficiência Energética (61,5%)</li>
+                        </ul>
+                        <!-- Imagem ilustrativa -->
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reciclagem" class="img-responsive img-arredondada">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO GREENWASHING -->
+        <section id="greenwashing" class="secao greenwashing">
+            <div class="container">
+                <h2 class="titulo-secao">⚠️ O FIM DO GREENWASHING</h2>
+                <div class="grid-duas-colunas">
+                    <div class="coluna-texto">
+                        <div class="caixa-definicao">
+                            <p><strong>O que é:</strong> Propaganda enganosa que simula uma responsabilidade ambiental inexistente.</p>
+                        </div>
+                        <p><strong>Consumidor Consciente:</strong> 8 em cada 10 brasileiros pretendem adotar hábitos mais sustentáveis em 2026, mas 26% apontam o preço alto como barreira.</p>
+                        <!-- Imagem sobre greenwashing -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToetkCyt9-AqW-C4J8KiHLLyLMlfNBPVdvHQ&s" alt="Greenwashing" class="img-responsive img-arredondada">
+                    </div>
+                    <div class="coluna-texto">
+                        <p><strong>Nova Legislação:</strong> A norma <strong>ABNT NBR 20250:2026</strong> no Brasil agora exige provas técnicas para o uso de selos de sustentabilidade.</p>
+                        <button id="botao-selo" class="botao-interativo">🔍 Como identificar um selo falso?</button>
+                        <div id="dica-selo" class="dica-oculta">
+                            <p>⚠️ Desconfie de selos vagos como "eco-friendly" sem explicação. A nova norma exige comprovação técnica!</p>
+                            <ul>
+                                <li>✅ Procure por certificações reconhecidas</li>
+                                <li>✅ Verifique se há dados concretos</li>
+                                <li>✅ Desconfie de termos genéricos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO EXEMPLOS REAIS -->
+        <section id="exemplos" class="secao exemplos">
+            <div class="container">
+                <h2 class="titulo-secao">✨ EXEMPLOS REAIS E TENDÊNCIAS</h2>
+                <div class="grid-cards">
+                    <div class="card card-exemplo card-expandivel">
+                        <span class="icone-card">🔗</span>
+                        <h3>Rastreabilidade</h3>
+                        <p>Uso de Blockchain para garantir que a carne ou a soja não venham de desmatamento.</p>
+                        <div class="expandir-conteudo">
+                            <p>💡 Como funciona: Cada etapa da produção é registrada em um bloco, criando um histórico impossível de falsificar.</p>
+                        </div>
+                    </div>
+                    <div class="card card-exemplo card-expandivel">
+                        <span class="icone-card">💰</span>
+                        <h3>Mercado de Carbono</h3>
+                        <p>Empresas que poluem menos vendem "créditos" para as que ainda estão em transição.</p>
+                        <div class="expandir-conteudo">
+                            <p>🌿 Na prática: Uma empresa que planta árvores pode vender créditos para uma indústria que precisa compensar suas emissões.</p>
+                        </div>
+                    </div>
+                    <div class="card card-exemplo card-expandivel">
+                        <span class="icone-card">🔄</span>
+                        <h3>Logística Reversa</h3>
+                        <p>Empresas de cosméticos e eletrônicos que dão descontos para quem devolve a embalagem/aparelho antigo.</p>
+                        <div class="expandir-conteudo">
+                            <p>🎁 Exemplo: Natura e Samsung têm programas que oferecem até 30% de desconto na troca de embalagens.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="frase-destaque">✨ A sustentabilidade deixou de ser "ética" para ser <strong>"estratégica"</strong>.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO EQUILÍBRIO -->
+        <section id="equilibrio" class="secao equilibrio">
+            <div class="container">
+                <h2 class="titulo-secao">⚖️ O EQUILÍBRIO É POSSÍVEL?</h2>
+                <p class="frase-impacto">🌱 Não existe produção em um planeta morto 🌱</p>
+                
+                <!-- Galeria de imagens interativa -->
+                <div class="galeria">
+                    <h3>📸 Sustentabilidade em Ação</h3>
+                    <div class="grid-galeria">
+                        <div class="item-galeria" data-imagem="1">
+                            <img src="https://bulbeenergia.com.br/wp-content/uploads/2024/08/energia-solar.jpg" alt="Energia Solar" class="img-galeria">
+                            <div class="legenda-galeria">Energia Solar</div>
+                        </div>
+                        <div class="item-galeria" data-imagem="2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEOp9hvik3qJOq_DN2kJiK7X1dzlUmHBM6Jg&s" alt="Agricultura Sustentável" class="img-galeria">
+                            <div class="legenda-galeria">Agricultura Sustentável</div>
+                        </div>
+                        <div class="item-galeria" data-imagem="3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDSYvDuCOZlyOmm_oqWC9a-sc57qP6ETI8JA&s" alt="Floresta" class="img-galeria">
+                            <div class="legenda-galeria">Preservação Ambiental</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pilares">
+                    <div class="pilar pilar-interativo">
+                        <span class="icone-pilar">⚖️</span>
+                        <h4>Leis Rígidas</h4>
+                    </div>
+                    <div class="pilar pilar-interativo">
+                        <span class="icone-pilar">🏭</span>
+                        <h4>Tecnologia Industrial</h4>
+                    </div>
+                    <div class="pilar pilar-interativo">
+                        <span class="icone-pilar">🧘</span>
+                        <h4>Consumo Consciente</h4>
+                    </div>
+                </div>
+                <p class="texto-final">O equilíbrio depende desses três pilares.</p>
+                
+                <!-- Botão para mudar tema -->
+                <button id="botao-tema" class="botao-tema">🎨 Mudar cores do site</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Trabalho Escolar - 2° Ano Ensino Médio | Laura Heck Thomazine</p>
+            <p>🌱 Imagens: Unsplash | Conteúdo baseado em pesquisa própria</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
